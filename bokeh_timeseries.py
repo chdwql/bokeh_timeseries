@@ -2,7 +2,7 @@ from bokeh.plotting import figure, show, output_file, gridplot
 import pandas as pd
 
 
-ts = pd.read_csv('1.csv', index_col=0, parse_dates=True)
+ts = pd.read_csv('test_data.xlsx', index_col=0, parse_dates=True)
 
 p1 = figure(x_axis_type='datetime', title=u'地电场第一装置南北向')
 ts1 = ts[(ts['ITEMID'] == 3411) & (ts['STATIONID'] == 370053)]
